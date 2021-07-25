@@ -1,0 +1,272 @@
+
+
+/*========================
+Basic Styles
+=========================*/
+
+@font-face {
+  font-family: 'Grobold';
+  src: url(/Assets/fonts/GROBOLD.ttf);
+}
+@font-face {
+  font-family: 'poppins';
+  src: url(/Assets/fonts/Poppins-Regular.ttf);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+/*========================
+Canvas
+=========================*/
+
+#canvas1{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1600px;
+  height: 600px;
+  border: 4px solid #1111;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+/*========================
+Navbar
+=========================*/
+
+.header_area {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  padding: 20px 0px;
+  transition: all 0.2s linear;
+}
+
+.header_area .container {
+  position: relative;
+}
+
+.navbar {
+  color: #111111;
+  padding: 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  z-index: 98;
+}
+
+.logo h2 {
+  position: relative;
+  font-size: 48px;
+  font-family: 'Grobold';
+  color: rgb(255, 230, 0);
+}
+
+.navbar ul.links {
+  margin-left: auto;
+  margin-right: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease all, 0s ease background;
+  -webkit-transition: 0.4s ease all, 0s ease background;
+  -moz-transition: 0.4s ease all, 0s ease background;
+  -ms-transition: 0.4s ease all, 0s ease background;
+  -o-transition: 0.4s ease all, 0s ease background;
+}
+
+.navbar ul.links li {
+  text-transform: uppercase;
+  padding: 0 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  position: relative;
+}
+
+.navbar ul.links li a {
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navbar ul.links li a i{
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  text-decoration: none;
+  color: #111111;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar ul.links li a i:hover{
+  color: rgb(255, 230, 0);
+  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}
+
+.normal-link {
+  height: 20px;
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -ms-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+}
+
+.nav-link:hover{
+  color: rgb(255, 230, 0) !important;
+  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}
+
+/*========================
+Hero Section
+=========================*/
+
+.container-main{
+  background-image: url("/Assets/118Z_.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.hero-img img{
+  top: 50%;
+  left: 50%;
+  transform: translate(75%, 35%);
+  -webkit-transform: translate(75%, 35%);
+  -moz-transform: translate(75%, 35%);
+  -ms-transform: translate(75%, 35%);
+  -o-transform: translate(75%, 35%);
+}
+
+.hero h2{
+  font-size: 120px;
+  font-family: 'grobold';
+  z-index: 999;
+  color: rgb(255, 230, 0);
+  transform: translate(40%, -150%);
+  -webkit-transform: translate(40%, -150%);
+  -moz-transform: translate(40%, -150%);
+  -ms-transform: translate(40%, -150%);
+  -o-transform: translate(40%, -150%);
+}
+
+.hero h4{
+  font-size: 24px;
+  font-family: 'poppins';
+  z-index: 999;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  transform: translateY(-800%);
+  -webkit-transform: translateY(-800%);
+  -moz-transform: translateY(-800%);
+  -ms-transform: translateY(-800%);
+  -o-transform: translateY(-800%);
+}
+
+
+/*========================
+Game Page
+=========================*/
+
+.container-game{
+  background-image: url("Assets/1234c.jpg");
+  height: 100vh;
+  background-size: cover;
+  overflow-y: hidden;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.header-text{
+  top: 10%;
+}
+
+.header-text h2{
+  text-align: center;
+  font-family: 'Grobold';
+  font-weight: 900;
+  font-size: 64px;
+  color: rgb(255, 230, 0);
+}
+
+.header-text h3{
+  position: relative;
+  top: 0%;
+  transform: translateY(-150%);
+  text-align: center;
+  font-family: 'poppins';
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  -webkit-transform: translateY(-150%);
+  -moz-transform: translateY(-150%);
+  -ms-transform: translateY(-150%);
+  -o-transform: translateY(-150%);
+}
+
+h5{
+  text-align: center;
+  font-family: 'poppins';
+  color: #fff;
+  font-weight: 300;
+  transform: translateY(3000%);
+  -webkit-transform: translateY(3000%);
+  -moz-transform: translateY(3000%);
+  -ms-transform: translateY(3000%);
+  -o-transform: translateY(3000%);
+}
